@@ -3,7 +3,7 @@ import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import workers from "./workers.json";
-import "./App.css";
+
 
 class App extends Component {
   // Setting this.state.workers to the cards json array
@@ -47,7 +47,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+        <Header score={this.state.score} highscore={this.state.highscore}>Memory Game</Header>
         {this.state.workers.map(card => (
           <Card
             clickCount={this.clickCount}
