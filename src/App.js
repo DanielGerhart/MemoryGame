@@ -6,7 +6,6 @@ import workers from "./workers.json";
 
 
 class App extends Component {
-  // Setting this.state.workers to the cards json array
   state = {
     workers,
     score: 0,
@@ -43,7 +42,6 @@ class App extends Component {
       }
     });
   }
-  // Map over this.state.workers and render a cardCard component for each card object
   render() {
     return (
       <Wrapper>
