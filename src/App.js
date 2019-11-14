@@ -21,6 +21,10 @@ class App extends Component {
     this.state.workers.forEach(card => {
       card.count = 0;
     });
+    if (this.state.score === 12) {
+      alert(`You Won!!!!!!`);
+    this.setState({score: 0});
+    }
     alert(`Game Over :( \nscore: ${this.state.score}`);
     this.setState({score: 0});
     return true;
